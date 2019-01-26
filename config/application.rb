@@ -17,3 +17,7 @@ module MessageApp
     # the framework and any gems in your application.
   end
 end
+
+class Application < Rails::Application
+  config.generators.template_engine = :slim  
+end
