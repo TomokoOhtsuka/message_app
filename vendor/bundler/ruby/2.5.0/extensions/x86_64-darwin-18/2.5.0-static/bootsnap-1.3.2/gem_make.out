@@ -1,0 +1,15 @@
+current directory: /Users/tomoko/message_app/vendor/bundler/ruby/2.5.0/gems/bootsnap-1.3.2/ext/bootsnap
+/Users/tomoko/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20190129-38716-1bt2kbj.rb extconf.rb
+creating Makefile
+
+current directory: /Users/tomoko/message_app/vendor/bundler/ruby/2.5.0/gems/bootsnap-1.3.2/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/tomoko/message_app/vendor/bundler/ruby/2.5.0/gems/bootsnap-1.3.2/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/tomoko/message_app/vendor/bundler/ruby/2.5.0/gems/bootsnap-1.3.2/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20190129-38716-1hrg7qb/bootsnap
