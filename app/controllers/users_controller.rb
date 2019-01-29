@@ -1,9 +1,18 @@
 class UsersController < ApplicationController
+  before_action :set_user, only:[:show, :edit, :update, :destroy]
+
   def new
+    @user = User.new
+  end
+
+  def create
+   @user = User.new(user_params)
+   return redirect_to user_path(@user) if @user.save
+   render action: 'new'
+   # あとでmessages/indexにredirectするように変更
   end
   
-  def show
-  end
+  def show; end
   
   def index
     #とりあえず登録してるユーザーの一覧。
@@ -23,7 +32,7 @@ class UsersController < ApplicationController
     end
     
     def user_params
-      params.require(:user).permit(:name, :email)
+      params.require(:user).permit(:name, :email, :password, :password_comfirmation)
     end
   
 end
