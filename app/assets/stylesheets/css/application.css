@@ -1,4 +1,19 @@
+header {
+  height: 60px;
+  background: pink; }
+
+h1, p {
+  text-align: center; }
+
+h1 {
+  margin-top: 0; }
+
 h1 {
   color: pink; }
+
+body {
+  margin: 0;
+  height: calc(100% - $header_heignt);
+  width: 100%; }
 
 /*# sourceMappingURL=application.css.map */
