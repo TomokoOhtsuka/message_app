@@ -7,9 +7,9 @@ class UsersController < ApplicationController
 
   def create
    @user = User.new(user_params)
+    # TODO:あとでmessages/indexにredirectするように変更
    return redirect_to user_path(@user) if @user.save
    render :new
-   # あとでmessages/indexにredirectするように変更
   end
   
   def show; end
